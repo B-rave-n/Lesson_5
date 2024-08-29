@@ -1,6 +1,6 @@
 import random
 from random import randint
-e = int(input(print('Скільски рядків та стовпчиків ми створимо?')))
+e = int(input(print('Скільки рядків та стовпчиків ми створимо?')))
 matrix = []
 for i in range(e):
     matrix.append([])
@@ -33,7 +33,7 @@ while number_of_line > e:
 number_of_line -= 1
 for i in matrix[number_of_line]:
     print(i, end = ' ')
-    print()
+print()
 number_of_column_1 = int(input(print('Будемо міняти стовпчики місцями. Введи перший номер стовпчика:')))
 while number_of_column_1 > e:
     number_of_column_1 = int(input(print('Тобі вже говорили, їх там всього', e, '. Введи щось адекватне:')))
