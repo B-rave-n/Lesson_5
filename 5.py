@@ -12,7 +12,7 @@ while 1:
     if zminna in keyword.kwlist or count_of_strings:
         zminna = input('Не можна використовувати спецслова та спецсимволи. Введи іншу назву змінної:')
         continue
-    elif zminna[0].isdigit() or not zminna.lower != zminna:
+    elif zminna[0].isdigit() or zminna.lower() != zminna:
         zminna = input('Змінна не може починатися з цифри та містити великі літери. Введи іншу назву змінної:')
         continue
     else:
